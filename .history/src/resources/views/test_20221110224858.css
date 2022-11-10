@@ -1,0 +1,38 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+.tem {
+	width: 6cm;
+	height: 3cm;
+	border: 1px solid;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.qrcode,
+.data {
+	flex: 1;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.data {
+	text-align: center;
+}
+.data .id {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+span {
+	display: block;
+}
+
+.data .brand {
+	font-weight: bold;
+}
