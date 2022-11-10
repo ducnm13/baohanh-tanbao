@@ -1,0 +1,53 @@
+<div class="row">
+	<div class="abc">
+		<div class="row">
+			<h1 class="qr-heading">Tạo thông tin bảo hành</h1>
+		</div>
+
+		<form class="qr-form" method="POST" action="/qrcode/store">
+			<div class="mb-3">
+				<label class="form-label">Mã sản phẩm</label>
+				<input type="text" class="form-control" name="idSP" />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Tên sản phẩm</label>
+				<input type="text" class="form-control" name="name" />
+			</div>
+			{{! <div class="mb-3">
+				<label class="form-label">Ngày xuất kho</label>
+				<input type="date" class="form-control" name="date1" />
+			</div> }}
+			{{! <div class="mb-3">
+				<label class="form-label">Ngày hết hạn</label>
+				<input type="date" class="form-control" name="date2" />
+			</div> }}
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="year"
+					id="bh-1year"
+					value="1"
+					checked
+				/>
+				<label class="form-check-label" for="bh-1year">
+					Bảo hành 1 năm
+				</label>
+			</div>
+			<div class="form-check">
+				<input
+					class="form-check-input"
+					type="radio"
+					name="year"
+					id="bh-2year"
+					value="2"
+				/>
+				<label class="form-check-label" for="bh-2year">
+					Bảo hành 2 năm
+				</label>
+			</div>
+			<button type="submit" class="btn btn-success">Save</button>
+		</form>
+	</div>
+
+</div>

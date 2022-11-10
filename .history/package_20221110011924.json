@@ -1,0 +1,31 @@
+{
+	"name": "qrcode-baohanhdientu",
+	"version": "1.0.0",
+	"description": "tao va quan ly qrcode bao hanh dien tu",
+	"main": "./src/index.js",
+	"engines": {
+		"node": "14.x"
+	},
+	"scripts": {
+		"start": "node ./src/index.js",
+		"test": "nodemon --inspect src/index.js"
+	},
+	"keywords": [
+		"qrcode",
+		"baohanhdientu",
+		"ducnm"
+	],
+	"author": "ducnm (Minh Duc)",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"express-handlebars": "^6.0.6",
+		"mongoose": "^6.7.1",
+		"mongoose-slug-generator": "^1.0.4",
+		"qrcode": "^1.5.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
+}
